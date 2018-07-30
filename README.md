@@ -1,2 +1,2 @@
 # ICP-POWER-Up
-Install ICP using Vagrant via POWER-Up
+Install ICP via POWER-Up
