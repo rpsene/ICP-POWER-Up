@@ -11,7 +11,7 @@ gen_ssh_keys(){
 
 apt-get update
 
-apt install docker.io
+apt install docker.io -y
 
 sudo docker pull ibmcom/icp-inception-ppc64le:2.1.0.2
 
