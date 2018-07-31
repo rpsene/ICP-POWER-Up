@@ -11,3 +11,14 @@ This single node will become the ICP Master. The Bash script in this repo will b
 Instructions for installing ICP-CE from:
 https://www.ibm.com/support/knowledgecenter/en/SSBS6K_2.1.0.2/installing/install_containers_CE.html
 
+# Instructions
+
+Follow instructions on POWER-Up repo: https://github.com/open-power-ref-design-toolkit/power-up
+
+In summary:
+
+Launch your cluster ```pup deploy config.yaml```
+
+Remove your cluster ```teardown switches --data config.yml; teardown deployer --container  config.yml```
+
+Deploy software on nodes only ```pup post-deploy config.yml```
