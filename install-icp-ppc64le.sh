@@ -3,10 +3,10 @@
 #Written by Mick Tarsel
 
 gen_ssh_keys(){
-  ssh-keygen -b 4096 -f ~/.ssh/id_rsa -N ""
-  cat ~/.ssh/id_rsa.pub | sudo tee -a ~/.ssh/authorized_keys
+  ssh-keygen -b 4096 -f ~/.ssh/id_rsa -N "";
+  cat ~/.ssh/id_rsa.pub | sudo tee -a ~/.ssh/authorized_keys;
   #ssh-copy-id -i ~/.ssh/id_rsa.pub <user>@<node_ip_address>
-  sudo systemctl restart sshd
+  sudo systemctl restart sshd;
 }
 
 apt-get update
