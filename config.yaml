@@ -2,10 +2,9 @@ software_bootstrap:
     - hosts: server-1
       command: |
         set -e
-        rm install-icp-ppc64le.sh || true
+        [ -e install-icp-ppc64le.sh ] && rm install-icp-ppc64le.sh
         wget https://raw.githubusercontent.com/mtarsel/ICP-POWER-Up/master/install-icp-ppc64le.sh
         chmod +x install-icp-ppc64le.sh
         ./install-icp-ppc64le.sh
     - hosts: all
       command: touch xyz.txt
-      
